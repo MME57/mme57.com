@@ -38,7 +38,7 @@ ul li {
 }
 ul li:hover {
   background: #a8e4a0;
-  color: #fff;
+  color: #c6df90;
 }
 ul li ul {
   padding: 0;
@@ -61,10 +61,10 @@ ul li ul {
 ul li ul li { 
   background: #a8e4a0; 
   display: block; 
-  color: #fff;
+  color: #c6df90;
   text-shadow: 0 -1px 0 #000;
 }
-ul li ul li:hover { background: #666; }
+ul li ul li:hover { background: #a8e4a0; }
 ul li:hover ul {
   display: block;
   opacity: 1;

@@ -5,7 +5,13 @@ body {
   text-align: center;
   background: #E3CAA1;
 }
-
+a {							
+	padding:13px;
+	text-decoration: none; 
+	color:#333;
+	text-shadow: 0 1px #fff;
+	display: block;
+}
 ul {
   text-align: left;
   display: inline;

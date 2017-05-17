@@ -28,7 +28,7 @@ ul li {
   margin-right: -4px;
   position: relative;
   padding: 15px 20px;
-  background: #c6df90;
+  background: #d0f0c0;
   cursor: pointer;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -37,8 +37,8 @@ ul li {
   transition: all 0.2s;
 }
 ul li:hover {
-  background: #a8e4a0;
-  color: #c6df90;
+  background: #d0f0c0;
+  color: #d0f0c0;
 }
 ul li ul {
   padding: 0;
@@ -59,12 +59,12 @@ ul li ul {
   -transition: opacity 0.2s;
 }
 ul li ul li { 
-  background: #c6df90; 
+  background: #d0f0c0; 
   display: block; 
-  color: #c6df90;
+  color: #d0f0c0;
   text-shadow: 0 -1px 0 #000;
 }
-ul li ul li:hover { background: #c6df90; }
+ul li ul li:hover { background: #d0f0c0; }
 ul li:hover ul {
   display: block;
   opacity: 1;

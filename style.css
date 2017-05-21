@@ -3,7 +3,13 @@ body {
   padding: 20px 50px 150px;
   font-size: 13px;
   text-align: center;
-  background: #317f43;
+      background: #072046;
+    background-image: <div>	<img src="https://mme57.github.io/snowflakesandfrost2.jpg"/></div>;
+     background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: #072046;
 }
 
 

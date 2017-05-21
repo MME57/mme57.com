@@ -3,12 +3,12 @@ body {
   padding: 20px 50px 150px;
   font-size: 13px;
   text-align: center;
-  background: #000000;
+  background: #36281d;
 }
 a {							
 	padding:13px;
 	text-decoration: none; 
-	color:#0000c0;
+	color:#a16e3b;
 	text-shadow: 0 1px #a8e4a0;
 	display: block;
 }
@@ -28,7 +28,7 @@ ul li {
   margin-right: -4px;
   position: relative;
   padding: 15px 20px;
-  background: #d0f0c0;
+  background: #b4674d;
   cursor: pointer;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -37,7 +37,7 @@ ul li {
   transition: all 0.2s;
 }
 ul li:hover {
-  background: #d0f0c0;
+  background: #b4674d;
   color: #d0f0c0;
 }
 ul li ul {

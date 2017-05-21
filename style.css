@@ -29,7 +29,7 @@ ul li {
   margin-right: -4px;
   position: relative;
   padding: 15px 20px;
-  background: #b4674d;
+  background: #FFF;
   cursor: pointer;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -38,7 +38,7 @@ ul li {
   transition: all 0.2s;
 }
 ul li:hover {
-  background: #b4674d;
+  background: #FFF;
   color: #d0f0c0;
 }
 ul li ul {

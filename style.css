@@ -38,7 +38,7 @@ ul li {
   transition: all 0.2s;
 }
 ul li:hover {
-  background: #FFF;
+  background: #8ac8ff;
   color: #002800;
 }
 ul li ul {

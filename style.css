@@ -3,15 +3,9 @@ body {
   padding: 20px 50px 150px;
   font-size: 13px;
   text-align: center;
-  background: #e0ffff;
+  background: #E3CAA1;
 }
-a {							
-	padding:13px;
-	text-decoration: none; 
-	color:#a16e3b;
-	text-shadow: 0 1px #a8e4a0;
-	display: block;
-}
+
 ul {
   text-align: left;
   display: inline;
@@ -28,7 +22,7 @@ ul li {
   margin-right: -4px;
   position: relative;
   padding: 15px 20px;
-  background: #FFF;
+  background: #fff;
   cursor: pointer;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -37,8 +31,8 @@ ul li {
   transition: all 0.2s;
 }
 ul li:hover {
-  background: #8ac8ff;
-  color: #002800;
+  background: #555;
+  color: #fff;
 }
 ul li ul {
   padding: 0;
@@ -59,12 +53,12 @@ ul li ul {
   -transition: opacity 0.2s;
 }
 ul li ul li { 
-  background: #d0f0c0; 
+  background: #555; 
   display: block; 
-  color: #d0f0c0;
+  color: #fff;
   text-shadow: 0 -1px 0 #000;
 }
-ul li ul li:hover { background: #d0f0c0; }
+ul li ul li:hover { background: #666; }
 ul li:hover ul {
   display: block;
   opacity: 1;

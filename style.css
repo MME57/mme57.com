@@ -3,7 +3,7 @@ body {
   padding: 20px 50px 150px;
   font-size: 13px;
   text-align: center;
-  background: #FFF;
+  background: #a2a2d0;
 }
 a {							
 	padding:13px;
@@ -37,8 +37,8 @@ ul li {
   transition: all 0.2s;
 }
 ul li:hover {
-  background: #b4674d;
-  color: #d0f0c0;
+  background: #a2a2d0;
+  color: #494991;
 }
 ul li ul {
   padding: 0;

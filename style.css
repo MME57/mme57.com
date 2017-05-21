@@ -4,19 +4,7 @@ body {
   font-size: 13px;
   text-align: center;
       background: #cadaba;
-    background-image:
-    repeating-linear-gradient(
-      150deg,
-      rgba(255, 255, 255, 0.06),
-      rgba(255, 255, 255, 0.06) 1px,
-      transparent 0,
-      transparent 41px),
-    repeating-linear-gradient(
-      -150deg,
-      rgba(255, 255, 255, 0.06),
-      rgba(255, 255, 255, 0.06) 1px,
-      transparent 0,
-      transparent 41px);
+    background-image: src="mme57.github.io/snowflakesandfrost2.jpg";
      background-size: initial;
     background-attachment: initial;
     background-origin: initial;

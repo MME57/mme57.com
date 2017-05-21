@@ -4,7 +4,7 @@ body {
   font-size: 13px;
   text-align: center;
       background: #072046;
-    background-image: <div>	<img src="https://mme57.github.io/snowflakesandfrost2.jpg"/></div>;
+    background-image:img src="https://mme57.github.io/snowflakesandfrost2.jpg";
      background-size: initial;
     background-attachment: initial;
     background-origin: initial;

@@ -67,7 +67,8 @@ a.button15:active {
         <br>
         <br>
         <br>
- <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
 <script>
   // Initialize Firebase
   var config = {
@@ -80,7 +81,7 @@ a.button15:active {
   };
   firebase.initializeApp(config);
 </script>
- 
+
   <script>
     function er1() {
       firebase.database().ref("mme57/" + document.getElementById("id_value").value).set(document.getElementById("id_value").value);

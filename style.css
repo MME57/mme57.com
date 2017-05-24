@@ -12,17 +12,20 @@ body {
     background-color: #cadaba;
 }
 
-
-ul {
-  background: none;
-  text-align: left;
-  display: inline;
-  margin: 0;
-  padding: 15px 4px 17px 0;
-  list-style: none;
-   -webkit-box-shadow: none;
-   -moz-box-shadow: none;
-   box-shadow: none;
+Navigation li {
+    height: auto;
+    width: 150px;
+    float: left;
+    text-align: center;
+    list-style: none;
+    font: 12px "Bonveno", "Century Gothic";
+    padding: 0;
+    margin: 0;
+    background-color: #cfc691;
+    border: 1px solid #a3c6c0;
+    box-shadow: 0 1px 0 rgba(255,255,255, .9) inset, 0 1px 3px rgba(0,0,0, .1);
+    border-radius: 3px;
+    margin-left: 10px;
 }
 
 

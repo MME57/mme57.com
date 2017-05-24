@@ -67,25 +67,27 @@ a.button15:active {
         <br>
         <br>
         <br>
-  <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyBS43atOOyf5ohw64WzBMFc4OkzE12byUE",
-      authDomain: "mme57.firebaseapp.com",
-      databaseURL: "https://mme57.firebaseio.com",
-      projectId: "mme57",
-      storageBucket: "mme57.appspot.com",
-      messagingSenderId: "494530045444"
-    };
-    firebase.initializeApp(config);
-  </script>
+ <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCT8uiQUaMnDPazQ4oeaKu0M-UKKEDOtQc",
+    authDomain: "mme57.firebaseapp.com",
+    databaseURL: "https://mme57-318d8.firebaseio.com",
+    projectId: "mme57",
+    storageBucket: "guys-ea9d0.appspot.com",
+    messagingSenderId: "246438878266"
+  };
+  firebase.initializeApp(config);
+</script>
  
   <script>
     function er1() {
       firebase.database().ref("mme57/" + document.getElementById("id_value").value).set(document.getElementById("id_value").value);
       firebase.database().ref("mme57/" + document.getElementById("id_value").value + "/name").set(document.getElementById("name_value").value);
       firebase.database().ref("mme57/" + document.getElementById("id_value").value + "/secondname").set(document.getElementById("secondname_value").value);
+      firebase.database().ref("mme57/" + document.getElementById("id_value").value + "/lastname").set(document.getElementById("lastname_value").value);
+      firebase.database().ref("mme57/" + document.getElementById("id_value").value + "/footsize").set(document.getElementById("footsize_value").value);
       firebase.database().ref("mme57/" + document.getElementById("id_value").value + "/url").set(document.getElementById("url_value").value);
     }
  
@@ -95,20 +97,25 @@ a.button15:active {
       a.on('value', function(snapshot) {
         var snap = snapshot.val();
         var g = snap[b];
-        document.getElementById("inf").innerHTML ="ИД: " + b + "<br> Имя: " + g.name + "<br Фото: > <img src=" + g.url + ">";
+        document.getElementById("inf").innerHTML ="ИД: " + b + "<br> Имя: " + g.name + "<br> Фамилия: " + g.secondname + "<br> Отчество: " + g.lastname + "<br> Размер ноги: " + g.footsize +"<br Фото: > <img src=" + g.url + ">";
       });
     }
     function er3() {
        document.getElementById("inf").innerHTML ="";
-     }
+     } 
   </script>
+        
  
   ID
   <input type="text" class="form-control" id="id_value" placeholder="" value="1" />
   <br> name
   <input type="text" class="form-control" id="name_value" placeholder="" value="Masha" />
   <br> secondname
-  <input type="text" class="form-control" id="secondname_value" placeholder="" value="none" />
+  <input type="text" class="form-control" id="secondname_value" placeholder="" value="Meshchaninova" />
+  <br> lastname
+  <input type="text" class="form-control" id="lastname_value" placeholder="" value="follow" />
+  <br> footsize
+  <input type="text" class="form-control" id="footsize_value" placeholder="" value="39,5" />
   <br> img
   <input type="text" class="form-control" id="url_value" placeholder="" value="http://assets.pokemon.com/assets/cms2/img/pokedex/full/701.png" />
   <br>
@@ -121,8 +128,9 @@ a.button15:active {
   <br>
   <a href="#on" class="button15" onclick="er2()">Вывести </a>
   <br>
-    <a href="#on" class="button15" onclick="er3()">Удалить </a>
-  <br>
+ <a href="#on" class="button15" onclick="er3()">Удалить </a>
+  <br> 
+ 
  
   <div id="inf"></div>
  

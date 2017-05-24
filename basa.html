@@ -28,7 +28,6 @@
       firebase.database().ref("mme57/" + document.getElementById("id_value").value).set(document.getElementById("id_value").value);
       firebase.database().ref("mme57/" + document.getElementById("id_value").value + "/name").set(document.getElementById("name_value").value);
       firebase.database().ref("mme57/" + document.getElementById("id_value").value + "/secondname").set(document.getElementById("secondname_value").value);
-      firebase.database().ref("mme57/" + document.getElementById("id_value").value + "/lastname").set(document.getElementById("lastname_value").value);
       firebase.database().ref("mme57/" + document.getElementById("id_value").value + "/url").set(document.getElementById("url_value").value);
     }
  
@@ -38,7 +37,7 @@
       a.on('value', function(snapshot) {
         var snap = snapshot.val();
         var g = snap[b];
-        document.getElementById("inf").innerHTML ="ИД: " + b + "<br> Имя: " + g.name + "<br> Отчество: " + g.lastname + "<br Фото: > <img src=" + g.url + ">";
+        document.getElementById("inf").innerHTML ="ИД: " + b + "<br> Имя: " + g.name + "<br Фото: > <img src=" + g.url + ">";
       });
     }
     function er3() {
@@ -49,15 +48,11 @@
   ID
   <input type="text" class="form-control" id="id_value" placeholder="" value="1" />
   <br> name
-  <input type="text" class="form-control" id="name_value" placeholder="" value="alice" />
+  <input type="text" class="form-control" id="name_value" placeholder="" value="Masha" />
   <br> secondname
-  <input type="text" class="form-control" id="secondname_value" placeholder="" value="follow" />
-  <br> lastname
-  <input type="text" class="form-control" id="lastname_value" placeholder="" value="whiterabbit" />
-  <br> footsize
-  <input type="text" class="form-control" id="footsize_value" placeholder="" value="37" />
+  <input type="text" class="form-control" id="secondname_value" placeholder="" value="none" />
   <br> img
-  <input type="text" class="form-control" id="url_value" placeholder="" value="https://pp.userapi.com/c836126/v836126600/3e4d8/qiF0QnHMfX8.jpg" />
+  <input type="text" class="form-control" id="url_value" placeholder="" value="https://www.google.ru/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi9lpez_YfUAhUDSJoKHTgdDK4QjRwIBw&url=http%3A%2F%2Fwww.pokemon.com%2Fru%2Fpokedex%2Fhawlucha&psig=AFQjCNG_O_C_wK2fylNmR_Ni5s6tpiL9sw&ust=1495696391866103" />
   <br>
   <br>
   <a href="#on" class="button15" onclick="er1()">Добавить </a>

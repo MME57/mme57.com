@@ -85,7 +85,6 @@ a.button15:active {
     function er1() {
       firebase.database().ref("mme57-318d8/" + document.getElementById("id_value").value).set(document.getElementById("id_value").value);
       firebase.database().ref("mme57-318d8/" + document.getElementById("id_value").value + "/name").set(document.getElementById("name_value").value);
-      firebase.database().ref("mme57-318d8/" + document.getElementById("id_value").value + "/secondname").set(document.getElementById("secondname_value").value);
       firebase.database().ref("mme57-318d8/" + document.getElementById("id_value").value + "/url").set(document.getElementById("url_value").value);
     }
  
@@ -95,7 +94,7 @@ a.button15:active {
       a.on('value', function(snapshot) {
         var snap = snapshot.val();
         var g = snap[b];
-        document.getElementById("inf").innerHTML ="ИД: " + b + "<br> Имя: " + g.name + "<br> Фамилия: " + g.secondname + "<br Картинка: > <img src=" + g.url + ">";
+        document.getElementById("inf").innerHTML ="ИД: " + b + "<br> Имя: " + g.name + "<br Картинка: > <img src=" + g.url + ">";
       });
     }
     function er3() {
@@ -107,9 +106,7 @@ a.button15:active {
   ID
   <input type="text" class="form-control" id="id_value" placeholder="" value="1" />
   <br> name
-  <input type="text" class="form-control" id="name_value" placeholder="" value="Masha" />
-  <br> secondname
-  <input type="text" class="form-control" id="secondname_value" placeholder="" value="Meshchaninova" />
+  <input type="text" class="form-control" id="name_value" placeholder="" value="MME" />
   <br> img
   <input type="text" class="form-control" id="url_value" placeholder="" value="https://moviepronews.com/wp-content/uploads/2013/10/FROZEN-Image-06-620x274.jpg" />
   <br>

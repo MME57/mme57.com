@@ -67,7 +67,7 @@ a.button15:active {
         <br>
         <br>
 
-<script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
 <script>
   // Initialize Firebase
   var config = {
@@ -86,8 +86,6 @@ a.button15:active {
       firebase.database().ref("mme57/" + document.getElementById("id_value").value).set(document.getElementById("id_value").value);
       firebase.database().ref("mme57/" + document.getElementById("id_value").value + "/name").set(document.getElementById("name_value").value);
       firebase.database().ref("mme57/" + document.getElementById("id_value").value + "/secondname").set(document.getElementById("secondname_value").value);
-      firebase.database().ref("mme57/" + document.getElementById("id_value").value + "/lastname").set(document.getElementById("lastname_value").value);
-      firebase.database().ref("mme57/" + document.getElementById("id_value").value + "/footsize").set(document.getElementById("footsize_value").value);
       firebase.database().ref("mme57/" + document.getElementById("id_value").value + "/url").set(document.getElementById("url_value").value);
     }
  
@@ -97,7 +95,7 @@ a.button15:active {
       a.on('value', function(snapshot) {
         var snap = snapshot.val();
         var g = snap[b];
-        document.getElementById("inf").innerHTML ="ИД: " + b + "<br> Имя: " + g.name + "<br> Фамилия: " + g.secondname + "<br> Отчество: " + g.lastname + "<br> Размер ноги: " + g.footsize +"<br Фото: > <img src=" + g.url + ">";
+        document.getElementById("inf").innerHTML ="ИД: " + b + "<br> Имя: " + g.name + "<br> Фамилия: " + g.secondname + "<br Картинка: > <img src=" + g.url + ">";
       });
     }
     function er3() {
@@ -112,10 +110,6 @@ a.button15:active {
   <input type="text" class="form-control" id="name_value" placeholder="" value="Masha" />
   <br> secondname
   <input type="text" class="form-control" id="secondname_value" placeholder="" value="Meshchaninova" />
-  <br> lastname
-  <input type="text" class="form-control" id="lastname_value" placeholder="" value="follow" />
-  <br> footsize
-  <input type="text" class="form-control" id="footsize_value" placeholder="" value="39,5" />
   <br> img
   <input type="text" class="form-control" id="url_value" placeholder="" value="http://www.pokemon.co.jp/ex/pokken_wiiU/common/images/game/151215_01/09/img_art.png" />
   <br>
@@ -137,5 +131,3 @@ a.button15:active {
  
 </body>
 </html>
- 
- 

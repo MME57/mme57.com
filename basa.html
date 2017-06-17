@@ -83,15 +83,15 @@ a.button15:active {
 
   <script>
     function er1() {
-      firebase.database().ref("mme57/" + document.getElementById("id_value").value).set(document.getElementById("id_value").value);
-      firebase.database().ref("mme57/" + document.getElementById("id_value").value + "/name").set(document.getElementById("name_value").value);
-      firebase.database().ref("mme57/" + document.getElementById("id_value").value + "/secondname").set(document.getElementById("secondname_value").value);
-      firebase.database().ref("mme57/" + document.getElementById("id_value").value + "/url").set(document.getElementById("url_value").value);
+      firebase.database().ref("mme57-318d8/" + document.getElementById("id_value").value).set(document.getElementById("id_value").value);
+      firebase.database().ref("mme57-318d8/" + document.getElementById("id_value").value + "/name").set(document.getElementById("name_value").value);
+      firebase.database().ref("mme57-318d8/" + document.getElementById("id_value").value + "/secondname").set(document.getElementById("secondname_value").value);
+      firebase.database().ref("mme57-318d8/" + document.getElementById("id_value").value + "/url").set(document.getElementById("url_value").value);
     }
  
     function er2() {
       var b = document.getElementById("id_show").value
-      var a = firebase.database().ref('/guys');
+      var a = firebase.database().ref('/mme57-318d8');
       a.on('value', function(snapshot) {
         var snap = snapshot.val();
         var g = snap[b];

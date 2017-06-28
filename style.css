@@ -1,5 +1,15 @@
 body{
-  background: -webkit-image-set(url(mme57.github.io/Роса.jpg) 1x, url((mme57.github.io/Роса.jpg) 2x);
+  background:-webkit-image-set(url(mme57.github.io/Роса.jpg) 1x, url(mme57.github.io/Роса.jpg) 2x) left top no-repeat rgb(255, 255, 255);
+    background-image: -webkit-image-set(url(mme57.github.io/Роса.jpg) 1x, url(mme57.github.io/Роса.jpg) 2x);
+    background-position-x: left;
+    background-position-y: top;
+    background-size: initial;
+    background-repeat-x: repeat;
+    background-repeat-y: repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(255, 255, 255)
 }
 
 

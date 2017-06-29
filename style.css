@@ -29,9 +29,10 @@ body{
 	font:12px "Bonveno", "Century Gothic";
 	padding: 0;
 	margin: 0;
-	background-color: #7077b7;
-	border: 1px solid #c5b96e;
-	box-shadow: 0 1px 0 rgba(103, 92, 26, 0.9) inset, 0 1px 3px rgba(0, 0, 0, 0.61);
+	 background:-webkit-image-set(url(mme57.github.io/gradient%202.jpg) 1x, url(mme57.github.io/gradient%202.jpg) 2x) left top repeat rgb(86, 255, 154);
+    background-image: -webkit-image-set(url(mme57.github.io/gradient%202.jpg) 1x, url(mme57.github.io/gradient%202.jpg) 2x);
+	border: 1px solid rgb(246, 228, 124);
+	box-shadow: 0 1px 0 rgb(0, 0, 0) inset, 0 1px 3px rgb(0, 0, 0);
 	border-radius: 3px;
 	margin-left:10px;
 }
@@ -39,8 +40,8 @@ body{
 .Navigation a{							
 	padding:13px;
 	text-decoration: none; 
-	color:#fff;
-	text-shadow: 0 1px #932e2e;
+	color: rgba(0, 0, 0, 0.50);
+	text-shadow: 0 1px #9b0f0f;
 	display: block;
 }
 .Navigation li ul{
@@ -72,5 +73,5 @@ ul {
 } 
 
 .Navigation li:hover, a:hover {
-	 background: rgba(161, 116, 182, 0.82);
+	 background: rgb(253, 225, 2);
 } 

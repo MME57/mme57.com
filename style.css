@@ -1,6 +1,6 @@
 body{
-  background:-webkit-image-set(url(https://goo.gl/UeZPP1) 1x, url(https://goo.gl/UeZPP1) 2x) left top no-repeat rgb(255, 255, 255);
-    background-image: -webkit-image-set(url(https://goo.gl/UeZPP1) 1x, url(https://goo.gl/UeZPP1) 2x);
+  background:-webkit-image-set(url(mme57.github.io/uzor.png) 1x, url(mme57.github.io/uzor.png) 2x) left top repeat rgb(126,17,17);
+    background-image: -webkit-image-set(url(mme57.github.io/uzor.png) 1x, url(mme57.github.io/uzor.png) 2x);
     background-position-x: left;
     background-position-y: top;
     background-size: initial;
@@ -9,7 +9,7 @@ body{
     background-attachment: initial;
     background-origin: initial;
     background-clip: initial;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(126,17,17);
 }
 
 

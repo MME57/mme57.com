@@ -1,5 +1,5 @@
 body{
-  background:-webkit-image-set(url(mme57.github.io/uzor.png) 1x, url(mme57.github.io/uzor.png) 2x) left top repeat rgb(156, 151, 143);
+  background:-webkit-image-set(url(mme57.github.io/uzor.png) 1x, url(mme57.github.io/uzor.png) 2x) left top repeat rgb(86, 255, 154);
     background-image: -webkit-image-set(url(mme57.github.io/uzor.png) 1x, url(mme57.github.io/uzor.png) 2x);
     background-position-x: left;
     background-position-y: top;
@@ -9,7 +9,7 @@ body{
     background-attachment: initial;
     background-origin: initial;
     background-clip: initial;
-    background-color: rgb(156, 151, 143);
+    background-color: rgb(86, 255, 154);
 }
 
 

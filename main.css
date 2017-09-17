@@ -1,0 +1,247 @@
+/* Default CSS for 'screen' media type
+ *
+ * TODO: 'print' etc. CSS files.
+ */
+
+/* Overall layout */
+html {
+  background-color: #ccffcc;
+  font-size: 100%;
+}
+#sidebar {
+  position: absolute;
+  top: 0.5em; left: 0px;
+  width: 15em;
+  margin: 0px; padding: 0px;
+  margin-left: 0.5em;
+}
+#sidebar a, #sidebar a:visited {
+  color: #00f;
+}
+body {
+  margin: 0.5em;
+  margin-left: 16em; /* sync with #sidebar */
+  padding: 0.5em;
+  background-color: #ffffff;
+}
+.obituary {
+  border: 0.2em solid black;
+  margin: 0.3em;
+  margin-left: 15.8em;
+}
+
+/* Sidebar */
+ul#nav {
+  list-style-type: none;
+  margin: -1em 0px; /* collapse with ul#nav>li */
+  padding: 0.5em;
+}
+ul#nav>li {
+  margin: 1em 0px;
+}
+ul#nav>li>ul {
+  list-style-type: none;
+  margin: 0px; padding: 0px;
+}
+ul#nav>li>ul>li {
+  margin: 0px;
+}
+ul#nav strong {
+  font-weight: bold;
+}
+ul#nav em.sidenote {
+  display: block;
+  margin: 0px 0px 0px 1em;
+  padding: 0px;
+}
+#sidebar p.note {
+  margin: 0.5em 0.5em;
+}
+
+/* Body content */
+h1 {
+  text-align: center;
+  font: bold 1.5em serif;
+  margin: 0em auto 1em auto;
+}
+h2 {
+  text-align: left;
+  font: bold 1.17em sans-serif;
+  margin: 1.2em auto 1.2em auto;
+}
+h2.subtitle {
+  text-align: center;
+  font: italic normal 1.05em serif;
+  margin: -1em auto 1em auto;
+}
+h3 {
+  text-align: left;
+  font: bold 1em sans-serif;
+  margin: 1.2em auto 1.0em auto;
+}
+.backlink {
+/*  font-size: 0.8em; */
+  vertical-align: top;
+  font-weight: normal;
+}
+h1 .errorcode {
+  font-family: serif;
+}
+h1 a, h2 a, h3 a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px dashed #554;
+}
+h1 a:hover, h2 a:hover, h3 a:hover {
+  border-bottom: 1px solid black;
+}
+abbr {
+  border-bottom: 0px;
+}
+a[rel=alternate][hreflang] {
+  position: absolute;
+  top: 1.0em;
+  right: 1.1em;
+  background-color: #e6ebc7;
+
+  font-weight: normal;
+  color: #554;
+  /*font-size: 12pt;*/
+  text-decoration: none;
+  border-bottom: 1px dashed #554;
+  vertical-align: top;
+}
+a[rel=alternate][hreflang]:hover {
+  border-bottom-style: solid;
+}
+p {
+  margin: 1em 0px;
+}
+.announce {
+  margin: 1em 0em;
+  border-left: 0.5em solid #996;
+  padding-left: 0.5em;
+}
+p.note {
+  text-align: left;
+  font: 0.75em sans-serif;
+  color: #555;
+  margin: 0.5em 10px;
+  padding-left: 7px;
+  border-left: 4px solid #777;
+}
+p.note a {
+  text-decoration: underline;
+  color: #550;
+}
+p.note a:visited {
+  color: #554;
+}
+.footnote {
+  display: block;
+  text-align: center;
+  font: 0.75em sans-serif;
+  color: #555;
+  margin: 0.5em auto;
+  line-height: 1.4;
+}
+.footnote a {
+  text-decoration: underline;
+  color: #554;
+}
+.hl {
+  font-weight: inherit;
+  font-style: inherit;
+  background-color: #f0dc78;
+}
+ul {
+  margin-top: -0.3em;
+}
+ul li {
+  margin-top: 0.3em;
+}
+abbr {
+  border-bottom: 1px dashed #554;
+}
+
+/* Tables: main style */
+table.text {
+  margin: 0.5em 0;
+  padding: 0 0;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+table.text caption {
+  margin-bottom: 1em;
+  font: bold 1.05em sans-serif;
+  text-align: center;
+}
+table.text thead {
+  border-bottom: 2px solid #e6ebc7;
+  background-color: #c9cba7;
+}
+table.text tbody {
+  border-top: 2px solid #c9cba7;
+  border-bottom: 2px solid #c9cba7;
+}
+
+table.text td, table.text th {
+  font: normal 1em serif;
+  padding: 0.4em 0.6em;
+  line-height: 1.4;
+  border-bottom: 1px solid #c9cba7;
+}
+table.text thead th {
+  font-weight: bold;
+}
+table.text colgroup.emph, table.text col.emph {
+  background-color: #dfe2c0;
+  border-left:  3px solid #e6ebc7;
+  border-right: 3px solid #e6ebc7;
+}
+table.text th {
+  border-right: 2px solid #e6ebc7;
+}
+
+table.text td {
+  color: #444;
+}
+table.text tr:hover td {
+  color: #000;
+  background-color: #d9dbb7;
+}
+table.text tr.hl td {
+  background-color: #f0dc78 !important;
+}
+
+/* Tables: override styles */
+table.mini {
+  width: 70%;
+  margin-left: 1.5em;
+}
+table.mini td, table.mini th {
+  font: normal 0.91em serif;
+}
+table.nohighlight td, table.nohighlight tr:hover td {
+  color: #383838;
+  background-color: inherit;
+}
+
+/* Footer */
+
+.footnote.nav {
+  margin-top: 2em;
+}
+.footnote.nav a {
+  padding: 0px 0.5em;
+}
+p#icons {
+  text-align: center;
+  font-size: 0.75em;
+  margin: 1.0em auto 0px;
+}
+p#icons img {
+  margin-left: 3px;
+}
+/* vim: set ft=css fenc=koi8-r ai et ts=2 sts=2 sw=2: ëÏÄÉÒÏ×ËÁ KOI8-R */
